@@ -1,0 +1,14 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "rosetta stone"
+version = "0.2.0"
+authors = [{name="Will Ribeiro", email="" }]
+description = "Client for rosetta stone"
+dependencies = ["argparse","requests", "urllib3"]
+requires-python = ">=3.10"
+
+[project.scripts]
+rosetta = "rosetta.__main__:main"
