@@ -10,7 +10,7 @@ Rosetta Stone is a command-line interface (CLI) application that translates text
 To install Rosetta Stone, simply clone the repository and install the dependencies:
 
 ```bash
-git clone https://github.com/wlribeiro/rossetta.git
+git clone https://github.com/wlribeiro/rosetta-cli.git
 cd rosetta-stone
 poetry shell
 poetry install
