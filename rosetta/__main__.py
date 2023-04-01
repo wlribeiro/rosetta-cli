@@ -3,7 +3,7 @@ from rosetta import api, cli, utils
 
 def main():
     args = cli.cli()
-    payload = utils.mount_payload(args.i, args.o, args.t)
+    payload = utils.mount_payload(args.input_language, args.output_language, args.text)
     response: dict | str = api.post_translate(payload)
     if isinstance(response, dict):
         text = utils.parse_response(response)
