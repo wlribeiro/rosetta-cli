@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "rosetta"
-version = "0.2.1"
+version = "0.1.2"
 description = "A CLI to translate phrases in others languages"
 authors = ["William <williamribeiroo@gmail.com.br>"]
 readme = "README.md"
