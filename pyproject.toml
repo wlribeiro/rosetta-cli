@@ -1,14 +1,20 @@
+[tool.poetry]
+name = "rosetta"
+version = "0.2.1"
+description = "A CLI to translate phrases in others languages"
+authors = ["William <williamribeiroo@gmail.com.br>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.2"
+urllib3 = "^1.26.15"
+argparse = "^1.4.0"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.2"
+
 [build-system]
-build-backend = "setuptools.build_meta"
-requires = ["setuptools", "wheel"]
-
-[project]
-name = "rosetta stone"
-version = "0.2.0"
-authors = [{name="Will Ribeiro", email="" }]
-description = "Client for rosetta stone"
-dependencies = ["argparse","requests", "urllib3"]
-requires-python = ">=3.10"
-
-[project.scripts]
-rosetta = "rosetta.__main__:main"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
